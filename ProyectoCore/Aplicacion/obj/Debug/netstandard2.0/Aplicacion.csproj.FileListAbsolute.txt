@@ -1,0 +1,14 @@
+C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\Aplicacion\bin\Debug\netstandard2.0\Aplicacion.deps.json
+C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\Aplicacion\bin\Debug\netstandard2.0\Aplicacion.dll
+C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\Aplicacion\bin\Debug\netstandard2.0\Aplicacion.pdb
+C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\Aplicacion\bin\Debug\netstandard2.0\Dominio.dll
+C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\Aplicacion\bin\Debug\netstandard2.0\Persistencia.dll
+C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\Aplicacion\bin\Debug\netstandard2.0\Dominio.pdb
+C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\Aplicacion\bin\Debug\netstandard2.0\Persistencia.pdb
+C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\Aplicacion\obj\Debug\netstandard2.0\Aplicacion.csprojAssemblyReference.cache
+C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\Aplicacion\obj\Debug\netstandard2.0\Aplicacion.csproj.CoreCompileInputs.cache
+C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\Aplicacion\obj\Debug\netstandard2.0\Aplicacion.AssemblyInfoInputs.cache
+C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\Aplicacion\obj\Debug\netstandard2.0\Aplicacion.AssemblyInfo.cs
+C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\Aplicacion\obj\Debug\netstandard2.0\Aplicacion.csproj.CopyComplete
+C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\Aplicacion\obj\Debug\netstandard2.0\Aplicacion.dll
+C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\Aplicacion\obj\Debug\netstandard2.0\Aplicacion.pdb
