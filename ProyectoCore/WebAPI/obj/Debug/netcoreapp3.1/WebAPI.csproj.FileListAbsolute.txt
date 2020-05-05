@@ -58,3 +58,8 @@ C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\WebAPI\bin\Debug\netcoreapp3
 C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\WebAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\WebAPI\bin\Debug\netcoreapp3.1\MediatR.dll
 C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\WebAPI\bin\Debug\netcoreapp3.1\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\WebAPI\bin\Debug\netcoreapp3.1\FluentValidation.dll
+C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\WebAPI\bin\Debug\netcoreapp3.1\FluentValidation.AspNetCore.dll
+C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\WebAPI\bin\Debug\netcoreapp3.1\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\WebAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll

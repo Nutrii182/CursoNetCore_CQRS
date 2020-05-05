@@ -1,6 +1,8 @@
 using System;
+using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
+using Aplicacion.HandlerError;
 using Dominio;
 using MediatR;
 using Persistencia;
@@ -23,8 +25,10 @@ namespace Aplicacion.Cursos
             {
                 var curso = await _context.Curso.FindAsync(request.Id);
 
-                if(curso == null) throw new Exception("No se encontro el curso");
-
+                if(curso == null) {
+                    //throw new Exception("No se encontro el curso");
+                    throw new HandlerException(HttpStatusCode.NotFound, new {message = "No se encontro el curso"});
+                }
                 _context.Remove(curso);
                 var result = await _context.SaveChangesAsync();
 
