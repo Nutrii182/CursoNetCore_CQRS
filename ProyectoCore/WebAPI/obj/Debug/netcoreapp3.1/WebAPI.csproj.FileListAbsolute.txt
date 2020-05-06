@@ -63,3 +63,8 @@ C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\WebAPI\bin\Debug\netcoreapp3
 C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\WebAPI\bin\Debug\netcoreapp3.1\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\WebAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
