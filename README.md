@@ -1,1 +1,1 @@
-# CursoNetCore_NCapas
+# CursoNetCore_CQRS
