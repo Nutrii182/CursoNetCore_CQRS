@@ -77,3 +77,5 @@ C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\WebAPI\bin\Debug\netcoreapp3
 C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
 C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\WebAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\WebAPI\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\WebAPI\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
