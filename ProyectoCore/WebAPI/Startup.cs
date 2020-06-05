@@ -26,6 +26,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Persistencia;
+using Persistencia.DapperConnection;
+using Persistencia.DapperConnection.Instructor;
 using Seguridad;
 using Seguridad.TokenSegurity;
 using WebAPI.Middleware;
@@ -47,7 +49,12 @@ namespace WebAPI
             services.AddDbContext<CursosOnlineContext>(opt => {
                 opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
             });
+
+            services.AddOptions();
+            services.Configure<ConnectionConfig>(Configuration.GetSection("ConnectionStrings"));
+
             services.AddMediatR(typeof(Consulta.Handler).Assembly);
+
             services.AddControllers( opt => {
                 var policy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
                 opt.Filters.Add(new AuthorizeFilter(policy));
@@ -72,6 +79,9 @@ namespace WebAPI
             services.AddScoped<IJwtGenerator, JwtGenerator>();
             services.AddScoped<IUsuarioSesion, UsuarioSesion>();
             services.AddAutoMapper(typeof(Consulta.Handler));
+
+            services.AddTransient<IFactoryConnection, FactoryConnection>();
+            services.AddScoped<IInstructor, InstructorRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
