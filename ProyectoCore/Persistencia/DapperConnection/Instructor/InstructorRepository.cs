@@ -12,14 +12,44 @@ namespace Persistencia.DapperConnection.Instructor
         public InstructorRepository(IFactoryConnection factoryConnection){
             _factoryConnection = factoryConnection;
         }
-        public Task<int> DeleteInstruc(Guid id)
+        public async Task<int> DeleteInstruc(Guid id)
         {
-            throw new NotImplementedException();
+            var storeProcedure = "usp_instructor_eliminar";
+            try{
+                var connection = _factoryConnection.GetConnection();
+                var result = await connection.ExecuteAsync(
+                    storeProcedure,
+                    new {
+                        InstructorId = id
+                    },
+                    commandType : CommandType.StoredProcedure
+                );
+                _factoryConnection.CloseConnection();
+                return result;
+            }catch(Exception e){
+                throw new Exception("No se pudo eliminar el instructor", e);
+            }
         }
 
-        public Task<InstructorModel> GetForId(Guid Id)
+        public async Task<InstructorModel> GetForId(Guid Id)
         {
-            throw new NotImplementedException();
+            InstructorModel instructor = null;
+            var storeProcedure = "usp_instructor_id";
+            try{
+                var connection = _factoryConnection.GetConnection();
+                instructor = await connection.QueryFirstAsync<InstructorModel>(
+                    storeProcedure,
+                    new {
+                        InstructorId = Id
+                    },
+                    commandType : CommandType.StoredProcedure
+                );
+            }catch(Exception e){
+                throw new Exception("No se encontro el instructor", e);
+            }finally{
+                _factoryConnection.CloseConnection();
+            }
+            return instructor;
         }
 
         public async Task<IEnumerable<InstructorModel>> GetList()
@@ -28,7 +58,11 @@ namespace Persistencia.DapperConnection.Instructor
             var storeProcedure = "usp_Obtener_Instructores";
             try{
                 var connection = _factoryConnection.GetConnection();
-                instructorList = await connection.QueryAsync<InstructorModel>(storeProcedure, null, commandType : CommandType.StoredProcedure);
+                instructorList = await connection.QueryAsync<InstructorModel>(
+                    storeProcedure,
+                    null,
+                    commandType : CommandType.StoredProcedure
+                );
             }catch(Exception e){
                 throw new Exception("Error en la consulta", e);
             }finally{
@@ -59,9 +93,26 @@ namespace Persistencia.DapperConnection.Instructor
             }
         }
 
-        public Task<int> UpdateInstruc(InstructorModel parametros)
+        public async Task<int> UpdateInstruc(Guid instructorId, string nombre, string apellidos, string titulo)
         {
-            throw new NotImplementedException();
+            var storeProcedure = "usp_instructor_editar";
+            try{
+                var connection = _factoryConnection.GetConnection();
+                var result = await connection.ExecuteAsync(
+                    storeProcedure,
+                    new {
+                        InstructorId = instructorId,
+                        Nombre = nombre,
+                        Apellidos = apellidos,
+                        Titulo = titulo
+                    },
+                    commandType : CommandType.StoredProcedure
+                );
+                _factoryConnection.CloseConnection();
+                return result;
+            }catch(Exception e){
+                throw new Exception("No se pudo actualizar el Instructor", e);
+            }
         }
     }
 }
