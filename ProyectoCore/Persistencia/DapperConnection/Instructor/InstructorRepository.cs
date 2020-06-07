@@ -82,7 +82,7 @@ namespace Persistencia.DapperConnection.Instructor
                     InstructorId = Guid.NewGuid(),
                     Nombre = nombre,
                     Apellidos = apellidos,
-                    Titulo = titulo
+                    Titulo = titulo,
                 },
                 commandType: CommandType.StoredProcedure
                 );
