@@ -25,9 +25,11 @@ using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 using Persistencia;
 using Persistencia.DapperConnection;
 using Persistencia.DapperConnection.Instructor;
+using Persistencia.DapperConnection.Paginacion;
 using Seguridad;
 using Seguridad.TokenSegurity;
 using WebAPI.Middleware;
@@ -36,12 +38,13 @@ namespace WebAPI
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
 
-        public IConfiguration Configuration { get; }
+        public Startup(IConfiguration configuration) 
+        {
+            this.Configuration = configuration;
+               
+        }
+                public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -82,6 +85,15 @@ namespace WebAPI
 
             services.AddTransient<IFactoryConnection, FactoryConnection>();
             services.AddScoped<IInstructor, InstructorRepository>();
+            services.AddScoped<IPaginacion, PaginacionRepositorio>();
+
+            services.AddSwaggerGen(c => {
+                c.SwaggerDoc("v1", new OpenApiInfo{
+                    Title = "Servicios para mantenimiento de cursos",
+                    Version = "v1"
+                });
+                c.CustomSchemaIds(c => c.FullName);
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -105,6 +117,11 @@ namespace WebAPI
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c => {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Cursos Online v1");
             });
         }
     }
