@@ -18,8 +18,7 @@ namespace Aplicacion.Seguridad
     public class UsuarioActualizar
     {
         public class Ejecuta : IRequest<UsuarioData>{
-            public string Nombre { get; set; }
-            public string Apellidos { get; set; }
+            public string NombreCompleto { get; set; }
             public string Email { get; set; }
             public string Password { get; set; }
             public string Username { get; set; }
@@ -27,8 +26,7 @@ namespace Aplicacion.Seguridad
 
         public class EjecutaValidator : AbstractValidator<Ejecuta>{
             public EjecutaValidator(){
-                RuleFor(x => x.Nombre).NotEmpty();
-                RuleFor(x => x.Apellidos).NotEmpty();
+                RuleFor(x => x.NombreCompleto).NotEmpty();
                 RuleFor(x => x.Email).NotEmpty();
                 RuleFor(x => x.Password).NotEmpty();
                 RuleFor(x => x.Username).NotEmpty();           
@@ -62,7 +60,7 @@ namespace Aplicacion.Seguridad
                 if(userExist)
                     throw new HandlerException(HttpStatusCode.InternalServerError, new {mensaje = "El usuario y/o el correo ya existen"});
                 
-                user.NombreCompleto = request.Nombre + " " + request.Apellidos;
+                user.NombreCompleto = request.NombreCompleto;
                 user.Email = request.Email;
                 user.PasswordHash = _passwordHasher.HashPassword(user, request.Password);
 
