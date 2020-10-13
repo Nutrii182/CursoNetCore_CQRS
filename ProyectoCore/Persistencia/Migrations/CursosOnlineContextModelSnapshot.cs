@@ -88,6 +88,32 @@ namespace Persistencia.Migrations
                     b.ToTable("CursoInstructor");
                 });
 
+            modelBuilder.Entity("Dominio.Documento", b =>
+                {
+                    b.Property<Guid>("DocumentoId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<byte[]>("Contenido")
+                        .HasColumnType("varbinary(max)");
+
+                    b.Property<string>("Extension")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("FechaCreacion")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Nombre")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("ObjetoReferencia")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("DocumentoId");
+
+                    b.ToTable("Documento");
+                });
+
             modelBuilder.Entity("Dominio.Instructor", b =>
                 {
                     b.Property<Guid>("InstructorId")

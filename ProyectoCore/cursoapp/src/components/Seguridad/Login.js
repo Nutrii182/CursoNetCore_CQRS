@@ -23,7 +23,6 @@ const Login = () => {
         e.preventDefault();
         loginUsuario(usuario).then(response => {
             console.log('Sesion iniciada');
-            console.log(response);
             window.localStorage.setItem('token', response.data.token);
         });
     }

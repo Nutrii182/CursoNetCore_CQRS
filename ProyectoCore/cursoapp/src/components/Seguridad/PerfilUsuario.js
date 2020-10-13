@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react';
 import style from '../shared/Style'
 import { Container, Typography, Grid, TextField, Button } from '@material-ui/core';
 import { usuarioActual, actualizarUsuario } from '../../actions/UsuarioAction';
+import { useStateValue } from '../../context/store';
 
 const PerfilUsuario = () => {
-
+    const [{ sesionUsuario }, dispatch] = useStateValue();
     const [usuario, setUsuario] = useState({
         nombreCompleto : '',
         email : '',
@@ -22,16 +23,32 @@ const PerfilUsuario = () => {
     };
 
     useEffect(() => {
-        usuarioActual().then(response => {
+        usuarioActual(dispatch).then(response => {
             setUsuario(response.data);
         });
     }, []);
 
     const modificaUsuario = (e) => {
         e.preventDefault();
-        actualizarUsuario(usuario).then(response => {
-            window.localStorage.setItem('token', response.data.token);
-            console.log(response);
+        actualizarUsuario(usuario, dispatch).then(response => {
+            if(response.status === 200){
+                dispatch({
+                    type : "OPEN_SNACKBAR",
+                    openMessage : {
+                        open : true,
+                        message : "Usuario Modificado Exitosamente"
+                    }
+                });
+                window.localStorage.setItem('token', response.data.token);
+            } else{
+                dispatch({
+                    type : "OPEN_SNACKBAR",
+                    openMessage : {
+                        open : true,
+                        message : "Error al guardar en : " + Object.keys(response.data.errors)
+                    }
+                });
+            }
         });
     };
 
