@@ -25,7 +25,7 @@ function App() {
     }
   },[startApp]);
 
-  return (
+  return startApp === false ? null : (
     <React.Fragment>
       <Snackbar
         anchorOrigin={{vertical:"bottom", horizontal:"center"}}
@@ -54,7 +54,7 @@ function App() {
             <Route exact path="/auth/login" component={Login}/>
             <Route exact path="/auth/registrar" component={RegistrarUsuario}/>
             <Route exact path="/auth/perfil" component={PerfilUsuario}/>
-            <Route exact path="/" component={PerfilUsuario}/>
+            <Route exact path="/" component={Login}/>
           </Switch>
         </Grid>
         </MuithemeProvider>
