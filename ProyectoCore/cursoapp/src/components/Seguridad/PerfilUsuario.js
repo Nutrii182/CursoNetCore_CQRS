@@ -39,6 +39,7 @@ const PerfilUsuario = () => {
     const modificaUsuario = (e) => {
         e.preventDefault();
         actualizarUsuario(usuario, dispatch).then(response => {
+            console.log(response);
             if(response.status === 200){
                 dispatch({
                     type : "OPEN_SNACKBAR",
@@ -67,9 +68,9 @@ const PerfilUsuario = () => {
         getDataImage(foto).then(resp => {
                 console.log(resp);
                 setUsuario((ant) => ({
-                ...ant,
-                foto : resp, // json de action imagen
-                fotoUrl : fotoUrl // formato url
+                    ...ant,
+                    foto : resp, // json de action imagen
+                    fotoUrl : fotoUrl // formato url
             }));           
         });
     };

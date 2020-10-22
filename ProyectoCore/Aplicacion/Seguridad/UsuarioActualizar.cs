@@ -61,9 +61,12 @@ namespace Aplicacion.Seguridad
                 if(userExist)
                     throw new HandlerException(HttpStatusCode.InternalServerError, new {mensaje = "El usuario y/o el correo ya existen"});
                 
-                if(request.ImagenPerfil != null){
-                    var resultadoImagen = await _context.Documento.Where(x => x.ObjetoReferencia ==  new Guid(user.Id)).FirstAsync();
-                    if(resultadoImagen == null){
+                if(request.ImagenPerfil != null){   
+                    
+                    var resultadoImagen = await _context.Documento.Where(x => x.ObjetoReferencia ==  new Guid(user.Id)).FirstOrDefaultAsync();
+                    
+                    if(resultadoImagen == null)
+                    {
                         var imagen = new Documento {
                             Contenido = System.Convert.FromBase64String(request.ImagenPerfil.Data),
                             Nombre = request.ImagenPerfil.Nombre,
@@ -89,7 +92,7 @@ namespace Aplicacion.Seguridad
                 var roles = await _userManager.GetRolesAsync(user);
                 var listRoles = new List<string>(roles);
 
-                var imagenPerfil = await _context.Documento.Where(x => x.ObjetoReferencia == new Guid(user.Id)).FirstOrDefaultAsync();
+                var imagenPerfil = await _context.Documento.Where(x => x.ObjetoReferencia == new Guid(user.Id)).FirstAsync();
                 ImagenGeneral imagenGeneral = null;
 
                 if(imagenPerfil != null){
@@ -100,7 +103,8 @@ namespace Aplicacion.Seguridad
                     };
                 }
 
-                if(result.Succeeded){
+                if(result.Succeeded)
+                {
                     return new UsuarioData{
                         NombreCompleto = user.NombreCompleto,
                         Username = user.UserName,

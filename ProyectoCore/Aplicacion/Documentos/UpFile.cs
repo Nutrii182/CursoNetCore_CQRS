@@ -12,7 +12,7 @@ namespace Aplicacion.Documentos
     public class UpFile
     {
         public class Ejecuta : IRequest {
-            public Guid ObjetoReferencia { get; set; }
+            public Guid? ObjetoReferencia { get; set; }
             public string Data { get; set; }
             public string Nombre { get; set; }
             public string Extension { get; set; }
@@ -28,7 +28,7 @@ namespace Aplicacion.Documentos
 
             public async Task<Unit> Handle(Ejecuta request, CancellationToken cancellationToken)
             {
-                var document = await _context.Documento.Where(x => x.ObjetoReferencia == request.ObjetoReferencia).FirstAsync();
+                var document = await _context.Documento.Where(x => x.ObjetoReferencia == request.ObjetoReferencia).FirstOrDefaultAsync();
 
                 if(document == null){
                     var doc = new Documento {

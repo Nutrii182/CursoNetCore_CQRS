@@ -37,7 +37,7 @@ namespace Aplicacion.Seguridad
                 var roles = await _userManager.GetRolesAsync(user);
                 var listRoles = new List<string>(roles);
 
-                var imagenPerfil = await _context.Documento.Where(x => x.ObjetoReferencia == new System.Guid(user.Id)).FirstOrDefaultAsync();
+                var imagenPerfil = await _context.Documento.Where(x => x.ObjetoReferencia == new Guid(user.Id)).FirstOrDefaultAsync();
                 
                 if(imagenPerfil != null){
                     var imagenCliente = new ImagenGeneral {
@@ -46,7 +46,8 @@ namespace Aplicacion.Seguridad
                         Nombre = imagenPerfil.Nombre
                     };
 
-                    return new UsuarioData{
+                    return new UsuarioData
+                    {
                         NombreCompleto = user.NombreCompleto,
                         Username = user.UserName,
                         Token = _jwtGenerator.CrearToken(user, listRoles),
@@ -55,7 +56,8 @@ namespace Aplicacion.Seguridad
                     };
 
                 } else {
-                    return new UsuarioData{
+                    return new UsuarioData
+                    {
                         NombreCompleto = user.NombreCompleto,
                         Username = user.UserName,
                         Token = _jwtGenerator.CrearToken(user, listRoles),
