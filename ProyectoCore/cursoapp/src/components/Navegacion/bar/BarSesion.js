@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
 const BarSesion = (props) => {
 
     const classes = useStyles();
-    const [{sesionUsuario}] = useStateValue();
+    const [{sesionUsuario}, dispatch] = useStateValue();
     const [openDrawerLeft, setOpenDrawerLeft] = useState(false);
     const [openDrawerRight, setOpenDrawerRight] = useState(false);
     
@@ -62,6 +62,11 @@ const BarSesion = (props) => {
 
     const salirSesionApp = () => {
         localStorage.removeItem('token');
+        dispatch({
+            type : "CERRAR_SESION",
+            nuevoUsuario : null,
+            authentication : false
+        });
         props.history.push('/auth/login');
     }
 
@@ -84,9 +89,11 @@ const BarSesion = (props) => {
                 <Typography variant="h6">Cursos Online</Typography>
                 <div className={classes.grow}></div>
                 <div className={classes.sectionDesktop}>
-                    <Button color="inherit">Salir</Button>
-                    <Button color="inherit">{sesionUsuario ? sesionUsuario.usuario.nombreCompleto : ""}</Button>
-                    <Avatar src={FotoUsuario}/>
+                    <Button color="inherit" onClick={salirSesionApp}>Salir</Button>
+                    <Button color="inherit">
+                        {sesionUsuario ? sesionUsuario.usuario.nombreCompleto : ""}
+                    </Button>
+                    <Avatar src={ sesionUsuario.usuario.imagenPerfil || FotoUsuario }/>
                 </div>
                 <div className={classes.sectionMobile}>
                     <IconButton color="inherit" onClick={openDrawerRightAction}>

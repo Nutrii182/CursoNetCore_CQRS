@@ -9,6 +9,7 @@ import { ThemeProvider as MuithemeProvider} from "@material-ui/core/styles";
 import AppNavBar from './components/Navegacion/AppNavbar';
 import { useStateValue } from './context/store';
 import { usuarioActual } from './actions/UsuarioAction';
+import RouteProtected from "./components/Navegacion/RouteProtected";
 
 function App() {
 
@@ -53,8 +54,8 @@ function App() {
           <Switch>
             <Route exact path="/auth/login" component={Login}/>
             <Route exact path="/auth/registrar" component={RegistrarUsuario}/>
-            <Route exact path="/auth/perfil" component={PerfilUsuario}/>
-            <Route exact path="/" component={Login}/>
+            <RouteProtected exact path="/auth/perfil" component={PerfilUsuario}/>
+            <RouteProtected exact path="/" component={PerfilUsuario}/>
           </Switch>
         </Grid>
         </MuithemeProvider>

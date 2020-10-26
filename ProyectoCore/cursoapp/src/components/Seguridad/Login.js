@@ -3,9 +3,12 @@ import style from '../shared/Style';
 import { Container, Avatar, Typography, TextField, Button } from '@material-ui/core';
 import LockIcon from '@material-ui/icons/Lock';
 import { loginUsuario } from '../../actions/UsuarioAction';
+import { withRouter } from 'react-router-dom';
+import { useStateValue } from '../../context/store';
 
-const Login = () => {
+const Login = (props) => {
 
+    const [{usuarioSesion}, dispatch] = useStateValue();
     const [usuario, setUsuario] = useState({
         Email: '',
         Password : '' 
@@ -21,9 +24,21 @@ const Login = () => {
     
     const iniciarSesion = (e) => {
         e.preventDefault();
-        loginUsuario(usuario).then(response => {
-            console.log('Sesion iniciada');
-            window.localStorage.setItem('token', response.data.token);
+        loginUsuario(usuario, dispatch).then(response => {
+
+            if(response.status === 200){
+                window.localStorage.setItem('token', response.data.token);
+                props.history.push("/auth/perfil");
+            } else {
+                dispatch({
+                    type : "OPEN_SNACKBAR",
+                    openMessage : {
+                        open : true,
+                        message : "Usuario y/o Contraseña Incorrectos"
+                    }
+                });
+            }
+
         });
     }
 
@@ -48,4 +63,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default withRouter(Login);

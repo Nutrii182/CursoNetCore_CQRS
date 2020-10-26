@@ -30,9 +30,10 @@ const PerfilUsuario = () => {
 
     useEffect(() => {
         setUsuario(sesionUsuario.usuario);
-        setUsuario((ant) => ({
+        setUsuario(ant => ({
             ...ant,
-            fotoUrl : sesionUsuario.usuario.imagenPerfil
+            fotoUrl : sesionUsuario.usuario.imagenPerfil,
+            imagenPerfil : null
         }));
     }, []);
 
@@ -69,7 +70,7 @@ const PerfilUsuario = () => {
                 console.log(resp);
                 setUsuario((ant) => ({
                     ...ant,
-                    foto : resp, // json de action imagen
+                    imagenPerfil : resp, // json de action imagen
                     fotoUrl : fotoUrl // formato url
             }));           
         });

@@ -11,7 +11,7 @@ export const DrawerRight = ({
     <div className={classes.list}>
         <List>
             <ListItem button component={Link}>
-                <Avatar src={usuario.foto || FotoUsuario}/>
+                <Avatar src={usuario.imagenPerfil || FotoUsuario}/>
                 <ListItemText classes={{primary : classes.listItemText}} primary={usuario ? usuario.nombreCompleto : null}/>
             </ListItem>
             <ListItem button onClick={salirSesion}>
