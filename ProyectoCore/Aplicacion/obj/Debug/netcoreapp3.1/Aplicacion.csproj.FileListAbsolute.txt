@@ -12,3 +12,17 @@ C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\Aplicacion\obj\Debug\netcore
 C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\Aplicacion\obj\Debug\netcoreapp3.1\Aplicacion.csproj.CopyComplete
 C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\Aplicacion\obj\Debug\netcoreapp3.1\Aplicacion.dll
 C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\Aplicacion\obj\Debug\netcoreapp3.1\Aplicacion.pdb
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\Aplicacion\bin\Debug\netcoreapp3.1\Aplicacion.deps.json
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\Aplicacion\bin\Debug\netcoreapp3.1\Aplicacion.dll
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\Aplicacion\bin\Debug\netcoreapp3.1\Aplicacion.pdb
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\Aplicacion\bin\Debug\netcoreapp3.1\Dominio.dll
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\Aplicacion\bin\Debug\netcoreapp3.1\Persistencia.dll
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\Aplicacion\bin\Debug\netcoreapp3.1\Dominio.pdb
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\Aplicacion\bin\Debug\netcoreapp3.1\Persistencia.pdb
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\Aplicacion\obj\Debug\netcoreapp3.1\Aplicacion.csprojAssemblyReference.cache
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\Aplicacion\obj\Debug\netcoreapp3.1\Aplicacion.AssemblyInfoInputs.cache
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\Aplicacion\obj\Debug\netcoreapp3.1\Aplicacion.AssemblyInfo.cs
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\Aplicacion\obj\Debug\netcoreapp3.1\Aplicacion.csproj.CoreCompileInputs.cache
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\Aplicacion\obj\Debug\netcoreapp3.1\Aplicacion.csproj.CopyComplete
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\Aplicacion\obj\Debug\netcoreapp3.1\Aplicacion.dll
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\Aplicacion\obj\Debug\netcoreapp3.1\Aplicacion.pdb

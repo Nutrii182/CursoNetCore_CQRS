@@ -13,6 +13,7 @@ namespace Aplicacion.Cursos
     public class Nuevo
     {
         public class Ejecuta : IRequest{
+            public Guid? CursoId { get; set; }
             public string Titulo {get; set;}
             public string Descripcion {get; set;}
             public DateTime? FechaPublicacion {get; set;}
@@ -41,6 +42,11 @@ namespace Aplicacion.Cursos
             public async Task<Unit> Handle(Ejecuta request, CancellationToken cancellationToken)
             {
                 Guid cursoId = Guid.NewGuid();
+
+                if(request.CursoId != null){
+                    cursoId = request.CursoId ?? Guid.NewGuid;
+                }
+
                 var curso = new Curso {
                     CursoId = cursoId,
                     Titulo = request.Titulo,

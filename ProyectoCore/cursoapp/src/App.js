@@ -10,6 +10,7 @@ import AppNavBar from './components/Navegacion/AppNavbar';
 import { useStateValue } from './context/store';
 import { usuarioActual } from './actions/UsuarioAction';
 import RouteProtected from "./components/Navegacion/RouteProtected";
+import NuevoCurso from './components/Cursos/NuevoCurso';
 
 function App() {
 
@@ -55,6 +56,7 @@ function App() {
             <Route exact path="/auth/login" component={Login}/>
             <Route exact path="/auth/registrar" component={RegistrarUsuario}/>
             <RouteProtected exact path="/auth/perfil" component={PerfilUsuario}/>
+            <RouteProtected exact path="/curso/nuevo" component={NuevoCurso}/>
             <RouteProtected exact path="/" component={PerfilUsuario}/>
           </Switch>
         </Grid>

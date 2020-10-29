@@ -14,3 +14,19 @@ C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\Seguridad\bin\Debug\netcorea
 C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\Seguridad\obj\Debug\netcoreapp3.1\Seguridad.csproj.CopyComplete
 C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\Seguridad\obj\Debug\netcoreapp3.1\Seguridad.dll
 C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\Seguridad\obj\Debug\netcoreapp3.1\Seguridad.pdb
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\Seguridad\bin\Debug\netcoreapp3.1\Seguridad.deps.json
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\Seguridad\bin\Debug\netcoreapp3.1\Seguridad.dll
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\Seguridad\bin\Debug\netcoreapp3.1\Seguridad.pdb
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\Seguridad\bin\Debug\netcoreapp3.1\Aplicacion.dll
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\Seguridad\bin\Debug\netcoreapp3.1\Dominio.dll
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\Seguridad\bin\Debug\netcoreapp3.1\Persistencia.dll
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\Seguridad\bin\Debug\netcoreapp3.1\Aplicacion.pdb
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\Seguridad\bin\Debug\netcoreapp3.1\Dominio.pdb
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\Seguridad\bin\Debug\netcoreapp3.1\Persistencia.pdb
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\Seguridad\obj\Debug\netcoreapp3.1\Seguridad.csprojAssemblyReference.cache
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\Seguridad\obj\Debug\netcoreapp3.1\Seguridad.AssemblyInfoInputs.cache
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\Seguridad\obj\Debug\netcoreapp3.1\Seguridad.AssemblyInfo.cs
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\Seguridad\obj\Debug\netcoreapp3.1\Seguridad.csproj.CoreCompileInputs.cache
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\Seguridad\obj\Debug\netcoreapp3.1\Seguridad.csproj.CopyComplete
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\Seguridad\obj\Debug\netcoreapp3.1\Seguridad.dll
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\Seguridad\obj\Debug\netcoreapp3.1\Seguridad.pdb

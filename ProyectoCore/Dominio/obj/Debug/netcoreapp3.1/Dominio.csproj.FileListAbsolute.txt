@@ -7,3 +7,12 @@ C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\Dominio\obj\Debug\netcoreapp
 C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\Dominio\obj\Debug\netcoreapp3.1\Dominio.AssemblyInfo.cs
 C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\Dominio\obj\Debug\netcoreapp3.1\Dominio.dll
 C:\Users\nart1\Desktop\Curso .Net Core\ProyectoCore\Dominio\obj\Debug\netcoreapp3.1\Dominio.pdb
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\Dominio\bin\Debug\netcoreapp3.1\Dominio.deps.json
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\Dominio\bin\Debug\netcoreapp3.1\Dominio.dll
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\Dominio\bin\Debug\netcoreapp3.1\Dominio.pdb
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\Dominio\obj\Debug\netcoreapp3.1\Dominio.csprojAssemblyReference.cache
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\Dominio\obj\Debug\netcoreapp3.1\Dominio.AssemblyInfoInputs.cache
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\Dominio\obj\Debug\netcoreapp3.1\Dominio.AssemblyInfo.cs
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\Dominio\obj\Debug\netcoreapp3.1\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\Dominio\obj\Debug\netcoreapp3.1\Dominio.dll
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\Dominio\obj\Debug\netcoreapp3.1\Dominio.pdb

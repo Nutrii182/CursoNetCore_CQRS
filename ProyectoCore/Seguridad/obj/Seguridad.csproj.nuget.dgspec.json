@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nart1\\Desktop\\Curso .Net Core\\ProyectoCore\\Seguridad\\Seguridad.csproj": {}
+    "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Seguridad\\Seguridad.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nart1\\Desktop\\Curso .Net Core\\ProyectoCore\\Aplicacion\\Aplicacion.csproj": {
+    "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Aplicacion\\Aplicacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nart1\\Desktop\\Curso .Net Core\\ProyectoCore\\Aplicacion\\Aplicacion.csproj",
+        "projectUniqueName": "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Aplicacion\\Aplicacion.csproj",
         "projectName": "Aplicacion",
-        "projectPath": "C:\\Users\\nart1\\Desktop\\Curso .Net Core\\ProyectoCore\\Aplicacion\\Aplicacion.csproj",
-        "packagesPath": "C:\\Users\\nart1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nart1\\Desktop\\Curso .Net Core\\ProyectoCore\\Aplicacion\\obj\\",
+        "projectPath": "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Aplicacion\\Aplicacion.csproj",
+        "packagesPath": "C:\\Users\\UV\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Aplicacion\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\nart1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\UV\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -30,11 +27,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\nart1\\Desktop\\Curso .Net Core\\ProyectoCore\\Dominio\\Dominio.csproj": {
-                "projectPath": "C:\\Users\\nart1\\Desktop\\Curso .Net Core\\ProyectoCore\\Dominio\\Dominio.csproj"
+              "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Dominio\\Dominio.csproj": {
+                "projectPath": "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Dominio\\Dominio.csproj"
               },
-              "C:\\Users\\nart1\\Desktop\\Curso .Net Core\\ProyectoCore\\Persistencia\\Persistencia.csproj": {
-                "projectPath": "C:\\Users\\nart1\\Desktop\\Curso .Net Core\\ProyectoCore\\Persistencia\\Persistencia.csproj"
+              "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Persistencia\\Persistencia.csproj": {
+                "projectPath": "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Persistencia\\Persistencia.csproj"
               }
             }
           }
@@ -79,24 +76,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\nart1\\Desktop\\Curso .Net Core\\ProyectoCore\\Dominio\\Dominio.csproj": {
+    "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nart1\\Desktop\\Curso .Net Core\\ProyectoCore\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "C:\\Users\\nart1\\Desktop\\Curso .Net Core\\ProyectoCore\\Dominio\\Dominio.csproj",
-        "packagesPath": "C:\\Users\\nart1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nart1\\Desktop\\Curso .Net Core\\ProyectoCore\\Dominio\\obj\\",
+        "projectPath": "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Dominio\\Dominio.csproj",
+        "packagesPath": "C:\\Users\\UV\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\nart1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\UV\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -143,24 +137,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\nart1\\Desktop\\Curso .Net Core\\ProyectoCore\\Persistencia\\Persistencia.csproj": {
+    "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Persistencia\\Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nart1\\Desktop\\Curso .Net Core\\ProyectoCore\\Persistencia\\Persistencia.csproj",
+        "projectUniqueName": "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Persistencia\\Persistencia.csproj",
         "projectName": "Persistencia",
-        "projectPath": "C:\\Users\\nart1\\Desktop\\Curso .Net Core\\ProyectoCore\\Persistencia\\Persistencia.csproj",
-        "packagesPath": "C:\\Users\\nart1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nart1\\Desktop\\Curso .Net Core\\ProyectoCore\\Persistencia\\obj\\",
+        "projectPath": "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Persistencia\\Persistencia.csproj",
+        "packagesPath": "C:\\Users\\UV\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Persistencia\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\nart1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\UV\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -173,8 +164,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\nart1\\Desktop\\Curso .Net Core\\ProyectoCore\\Dominio\\Dominio.csproj": {
-                "projectPath": "C:\\Users\\nart1\\Desktop\\Curso .Net Core\\ProyectoCore\\Dominio\\Dominio.csproj"
+              "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Dominio\\Dominio.csproj": {
+                "projectPath": "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Dominio\\Dominio.csproj"
               }
             }
           }
@@ -223,24 +214,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\nart1\\Desktop\\Curso .Net Core\\ProyectoCore\\Seguridad\\Seguridad.csproj": {
+    "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Seguridad\\Seguridad.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nart1\\Desktop\\Curso .Net Core\\ProyectoCore\\Seguridad\\Seguridad.csproj",
+        "projectUniqueName": "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Seguridad\\Seguridad.csproj",
         "projectName": "Seguridad",
-        "projectPath": "C:\\Users\\nart1\\Desktop\\Curso .Net Core\\ProyectoCore\\Seguridad\\Seguridad.csproj",
-        "packagesPath": "C:\\Users\\nart1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nart1\\Desktop\\Curso .Net Core\\ProyectoCore\\Seguridad\\obj\\",
+        "projectPath": "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Seguridad\\Seguridad.csproj",
+        "packagesPath": "C:\\Users\\UV\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Seguridad\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\nart1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\UV\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -253,8 +241,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\nart1\\Desktop\\Curso .Net Core\\ProyectoCore\\Aplicacion\\Aplicacion.csproj": {
-                "projectPath": "C:\\Users\\nart1\\Desktop\\Curso .Net Core\\ProyectoCore\\Aplicacion\\Aplicacion.csproj"
+              "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Aplicacion\\Aplicacion.csproj": {
+                "projectPath": "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Aplicacion\\Aplicacion.csproj"
               }
             }
           }
@@ -291,7 +279,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
