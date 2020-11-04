@@ -170,3 +170,7 @@ C:\Users\UV\Desktop\Curso .Net\ProyectoCore\WebAPI\obj\Debug\netcoreapp3.1\stati
 C:\Users\UV\Desktop\Curso .Net\ProyectoCore\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.dll
 C:\Users\UV\Desktop\Curso .Net\ProyectoCore\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.pdb
 C:\Users\UV\Desktop\Curso .Net\ProyectoCore\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.genruntimeconfig.cache
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\WebAPI\bin\Debug\netcoreapp3.1\iTextSharp.LGPLv2.Core.dll
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\WebAPI\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\WebAPI\bin\Debug\netcoreapp3.1\System.Text.Encoding.CodePages.dll
+C:\Users\UV\Desktop\Curso .Net\ProyectoCore\WebAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Text.Encoding.CodePages.dll

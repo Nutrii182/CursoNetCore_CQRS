@@ -5144,11 +5144,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Persistencia\\Persistencia.csproj",
+      "projectUniqueName": "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Persistencia\\Persistencia.csproj",
       "projectName": "Persistencia",
-      "projectPath": "c:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Persistencia\\Persistencia.csproj",
+      "projectPath": "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Persistencia\\Persistencia.csproj",
       "packagesPath": "C:\\Users\\UV\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Persistencia\\obj\\",
+      "outputPath": "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Persistencia\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\UV\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5164,8 +5164,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "c:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Dominio\\Dominio.csproj": {
-              "projectPath": "c:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Dominio\\Dominio.csproj"
+            "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Dominio\\Dominio.csproj": {
+              "projectPath": "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Dominio\\Dominio.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aCHRK4XRLFZ3aWQoaCWNDiFB/yyQlagDxKG+iTIaBxaZbTVAue1MIriAUdT7tIoFg4U564GKBp9E3SS7wz3qmA==",
+  "dgSpecHash": "eTana2wqnGtdO3TXd7KyCMXWaAxE+A0fPBLy3383HNrLhfusWgo2m3eyezLTLi52yI87II/ABON8cf7q2Z4YVQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Aplicacion\\Aplicacion.csproj",
+  "projectFilePath": "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Aplicacion\\Aplicacion.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\UV\\.nuget\\packages\\automapper\\8.1.1\\automapper.8.1.1.nupkg.sha512",
     "C:\\Users\\UV\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\6.1.1\\automapper.extensions.microsoft.dependencyinjection.6.1.1.nupkg.sha512",

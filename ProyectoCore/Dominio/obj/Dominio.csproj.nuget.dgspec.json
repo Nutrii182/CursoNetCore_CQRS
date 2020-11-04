@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Dominio\\Dominio.csproj": {}
+    "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Dominio\\Dominio.csproj": {}
   },
   "projects": {
-    "c:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Dominio\\Dominio.csproj": {
+    "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "c:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Dominio\\Dominio.csproj",
+        "projectPath": "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Dominio\\Dominio.csproj",
         "packagesPath": "C:\\Users\\UV\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Dominio\\obj\\",
+        "outputPath": "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\UV\\AppData\\Roaming\\NuGet\\NuGet.Config",

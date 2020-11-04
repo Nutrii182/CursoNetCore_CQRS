@@ -7221,11 +7221,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\WebAPI\\WebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\WebAPI\\WebAPI.csproj",
       "projectName": "WebAPI",
-      "projectPath": "c:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\WebAPI\\WebAPI.csproj",
+      "projectPath": "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\WebAPI\\WebAPI.csproj",
       "packagesPath": "C:\\Users\\UV\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\WebAPI\\obj\\",
+      "outputPath": "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\UV\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7241,11 +7241,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "c:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Aplicacion\\Aplicacion.csproj": {
-              "projectPath": "c:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Aplicacion\\Aplicacion.csproj"
+            "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Aplicacion\\Aplicacion.csproj": {
+              "projectPath": "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Aplicacion\\Aplicacion.csproj"
             },
-            "c:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Seguridad\\Seguridad.csproj": {
-              "projectPath": "c:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Seguridad\\Seguridad.csproj"
+            "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Seguridad\\Seguridad.csproj": {
+              "projectPath": "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Seguridad\\Seguridad.csproj"
             }
           }
         }
