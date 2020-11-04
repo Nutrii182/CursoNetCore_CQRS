@@ -44,7 +44,7 @@ namespace Aplicacion.Cursos
                 Guid cursoId = Guid.NewGuid();
 
                 if(request.CursoId != null){
-                    cursoId = request.CursoId ?? Guid.NewGuid;
+                    cursoId = request.CursoId ?? Guid.NewGuid();
                 }
 
                 var curso = new Curso {

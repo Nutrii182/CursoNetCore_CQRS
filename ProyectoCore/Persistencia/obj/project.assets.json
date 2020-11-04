@@ -5139,19 +5139,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\UV\\.nuget\\packages\\": {}
+    "C:\\Users\\nart1\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Persistencia\\Persistencia.csproj",
+      "projectUniqueName": "C:\\Users\\nart1\\Desktop\\Curso .Net Core\\ProyectoCore\\Persistencia\\Persistencia.csproj",
       "projectName": "Persistencia",
-      "projectPath": "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Persistencia\\Persistencia.csproj",
-      "packagesPath": "C:\\Users\\UV\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Persistencia\\obj\\",
+      "projectPath": "C:\\Users\\nart1\\Desktop\\Curso .Net Core\\ProyectoCore\\Persistencia\\Persistencia.csproj",
+      "packagesPath": "C:\\Users\\nart1\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nart1\\Desktop\\Curso .Net Core\\ProyectoCore\\Persistencia\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\UV\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nart1\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5164,8 +5168,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Dominio\\Dominio.csproj": {
-              "projectPath": "C:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\Dominio\\Dominio.csproj"
+            "C:\\Users\\nart1\\Desktop\\Curso .Net Core\\ProyectoCore\\Dominio\\Dominio.csproj": {
+              "projectPath": "C:\\Users\\nart1\\Desktop\\Curso .Net Core\\ProyectoCore\\Dominio\\Dominio.csproj"
             }
           }
         }
@@ -5214,7 +5218,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -4,17 +4,18 @@ import {
   Container,
   Grid,
   TextField,
-  Typography,
+  Typography
 } from "@material-ui/core";
 import {
   KeyboardDatePicker,
-  MuiPickersUtilsProvider,
+  MuiPickersUtilsProvider
 } from "@material-ui/pickers";
 import DateFnsUtils from "@date-io/date-fns";
 import style from "../shared/Style";
 import ImageUploader from "react-images-upload";
 import { v4 as uuidv4 } from "uuid";
-import { getDataImage  } from "../../actions/ImagenAction";
+import { getDataImage } from "../../actions/ImagenAction";
+import { guardarCurso } from "../../actions/CursoAction";
 
 const NuevoCurso = () => {
   const [fechaSelect, setFechaSelect] = useState(new Date());
@@ -23,25 +24,50 @@ const NuevoCurso = () => {
     titulo: "",
     descripcion: "",
     precio: 0.0,
-    promocion: 0.0,
+    promocion: 0.0
   });
 
-  const ingresarValores = (e) => {
+  const ingresarValores = e => {
     const { name, value } = e.target;
 
-    setCurso((ant) => ({
+    setCurso(ant => ({
       ...ant,
-      [name]: value,
+      [name]: value
     }));
   };
 
   const subirFoto = imagenes => {
-      const foto = imagenes[0];
+    const foto = imagenes[0];
 
-      getDataImage(foto).then((resp) => {
-          setImagenCurso(resp);
-      });
+    getDataImage(foto).then((resp) => {
+      setImagenCurso(resp);
+    });
   };
+
+  const saveCurso = e => {
+    e.preventDefault();
+    const cursoId = uuidv4();
+
+    const objCurso = {
+      titulo : curso.titulo,
+      descripcion : curso.descripcion,
+      precio : parseFloat(curso.precio || 0.0),
+      promocion : parseFloat(curso.promocion || 0.0),
+      fechaPublicacion : fechaSelect,
+      cursoId : cursoId
+    };
+
+    const objImagen = {
+      nombre : imagenCurso.nombre,
+      data : imagenCurso.data,
+      extension : imagenCurso.extension,
+      objetoReferencia : cursoId
+    };
+
+    guardarCurso(objCurso, imagenCurso).then(resp => {
+      console.log('respuesta', resp);
+    });
+  }
 
   const fotoKey = uuidv4();
 
@@ -104,7 +130,7 @@ const NuevoCurso = () => {
                   format="dd/MM/yyyy"
                   fullWidth
                   KeyboardButtonProps={{
-                    "aria-label": "change date",
+                    "aria-label": "change date"
                   }}
                 />
               </MuiPickersUtilsProvider>
@@ -117,7 +143,7 @@ const NuevoCurso = () => {
                 buttonText="Imagen del Curso"
                 onChange={subirFoto}
                 imgExtension={[".jpg", ".gif", ".png", ".jpeg"]}
-                maxFileSize = {5242880}
+                maxFileSize={5242880}
               />
             </Grid>
           </Grid>
@@ -129,6 +155,7 @@ const NuevoCurso = () => {
                 variant="contained"
                 color="primary"
                 style={style.submit}
+                onClick = {saveCurso}
               >
                 Guardar Curso
               </Button>
