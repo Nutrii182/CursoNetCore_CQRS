@@ -11,7 +11,7 @@ function RouteProtected({ component : Component, ...rest}){
             {...rest}
             render = {(props) =>
                 sesionUsuario ? (
-                    sesionUsuario.authenticate == true ? (
+                    sesionUsuario.authenticate === true ? (
                         <Component {...props} {...rest}/>
                     )
                     : <Redirect to="/auth/login"/>

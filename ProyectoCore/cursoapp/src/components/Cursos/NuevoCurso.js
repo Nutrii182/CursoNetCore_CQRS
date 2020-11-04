@@ -4,11 +4,11 @@ import {
   Container,
   Grid,
   TextField,
-  Typography
+  Typography,
 } from "@material-ui/core";
 import {
   KeyboardDatePicker,
-  MuiPickersUtilsProvider
+  MuiPickersUtilsProvider,
 } from "@material-ui/pickers";
 import DateFnsUtils from "@date-io/date-fns";
 import style from "../shared/Style";
@@ -16,27 +16,40 @@ import ImageUploader from "react-images-upload";
 import { v4 as uuidv4 } from "uuid";
 import { getDataImage } from "../../actions/ImagenAction";
 import { guardarCurso } from "../../actions/CursoAction";
+import { useStateValue } from "../../context/store";
 
 const NuevoCurso = () => {
+  const [{ sesionUsuario }, dispatch] = useStateValue();
   const [fechaSelect, setFechaSelect] = useState(new Date());
   const [imagenCurso, setImagenCurso] = useState(null);
   const [curso, setCurso] = useState({
     titulo: "",
     descripcion: "",
     precio: 0.0,
-    promocion: 0.0
+    promocion: 0.0,
   });
 
-  const ingresarValores = e => {
+  const resetForm = () => {
+    setFechaSelect(new Date());
+    setImagenCurso(null);
+    setCurso({
+      titulo: "",
+      descripcion: "",
+      precio: 0.0,
+      promocion: 0.0,
+    });
+  };
+
+  const ingresarValores = (e) => {
     const { name, value } = e.target;
 
-    setCurso(ant => ({
+    setCurso((ant) => ({
       ...ant,
-      [name]: value
+      [name]: value,
     }));
   };
 
-  const subirFoto = imagenes => {
+  const subirFoto = (imagenes) => {
     const foto = imagenes[0];
 
     getDataImage(foto).then((resp) => {
@@ -44,30 +57,61 @@ const NuevoCurso = () => {
     });
   };
 
-  const saveCurso = e => {
+  const saveCurso = (e) => {
     e.preventDefault();
     const cursoId = uuidv4();
 
     const objCurso = {
-      titulo : curso.titulo,
-      descripcion : curso.descripcion,
-      precio : parseFloat(curso.precio || 0.0),
-      promocion : parseFloat(curso.promocion || 0.0),
-      fechaPublicacion : fechaSelect,
-      cursoId : cursoId
+      titulo: curso.titulo,
+      descripcion: curso.descripcion,
+      precio: parseFloat(curso.precio || 0.0),
+      promocion: parseFloat(curso.promocion || 0.0),
+      fechaPublicacion: fechaSelect,
+      cursoId: cursoId,
     };
 
-    const objImagen = {
-      nombre : imagenCurso.nombre,
-      data : imagenCurso.data,
-      extension : imagenCurso.extension,
-      objetoReferencia : cursoId
-    };
+    let objImagen = null;
 
-    guardarCurso(objCurso, imagenCurso).then(resp => {
-      console.log('respuesta', resp);
+    if (imagenCurso) {
+      objImagen = {
+        nombre: imagenCurso.nombre,
+        data: imagenCurso.data,
+        extension: imagenCurso.extension,
+        objetoReferencia: cursoId,
+      };
+    }
+
+    guardarCurso(objCurso, imagenCurso).then((resp) => {
+      const respCurso = resp[0];
+      const respImagen = resp[1];
+
+      let mensaje = "";
+
+      if (respCurso.status === 200) {
+        mensaje += "Curso Guardado Exitósamente";
+        resetForm();
+      } else {
+        mensaje += "Error : " + Object.keys(respCurso.data.errors);
+      }
+
+      if (respImagen) {
+        if (respImagen.status === 200) {
+          mensaje += ", Imagen Guardada Exitósamente";
+        } else {
+          mensaje +=
+            ", Error en Imagen: " + Object.keys(respImagen.data.errors);
+        }
+      }
+
+      dispatch({
+        type: "OPEN_SNACKBAR",
+        openMessage: {
+          open: true,
+          message: mensaje,
+        },
+      });
     });
-  }
+  };
 
   const fotoKey = uuidv4();
 
@@ -130,7 +174,7 @@ const NuevoCurso = () => {
                   format="dd/MM/yyyy"
                   fullWidth
                   KeyboardButtonProps={{
-                    "aria-label": "change date"
+                    "aria-label": "change date",
                   }}
                 />
               </MuiPickersUtilsProvider>
@@ -155,7 +199,7 @@ const NuevoCurso = () => {
                 variant="contained"
                 color="primary"
                 style={style.submit}
-                onClick = {saveCurso}
+                onClick={saveCurso}
               >
                 Guardar Curso
               </Button>

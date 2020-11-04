@@ -8,7 +8,7 @@ const AppNavbar = () => {
     const [{sesionUsuario}, dispatch] = useStateValue();
 
     return sesionUsuario
-        ? (sesionUsuario.authenticate == true ? <AppBar position="static"><BarSesion/></AppBar> : null)
+        ? (sesionUsuario.authenticate === true ? <AppBar position="static"><BarSesion/></AppBar> : null)
         : null
 };
 

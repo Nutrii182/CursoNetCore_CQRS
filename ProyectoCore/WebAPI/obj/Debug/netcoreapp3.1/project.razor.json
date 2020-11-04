@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\nart1\\Desktop\\Curso .Net Core\\ProyectoCore\\WebAPI\\WebAPI.csproj",
+  "FilePath": "c:\\Users\\UV\\Desktop\\Curso .Net\\ProyectoCore\\WebAPI\\WebAPI.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14387,7 +14387,7 @@
         }
       }
     ],
-    "CSharpLanguageVersion": 900
+    "CSharpLanguageVersion": 800
   },
   "RootNamespace": "WebAPI",
   "Documents": [],

@@ -17,7 +17,7 @@ export const DrawerLeft = ({classes}) => (
                 <i className="material-icons">add_box</i>
                 <ListItemText classes={{primary: classes.ListItemText}} primary="Nuevo Curso"/>
             </ListItem>
-            <ListItem component={Link} button to='/curso/lista'>
+            <ListItem component={Link} button to='/curso/paginador'>
                 <i className="material-icons">menu_book</i>
                 <ListItemText classes={{primary: classes.ListItemText}} primary="Lista de Cursos"/>
             </ListItem>
